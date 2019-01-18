@@ -1,0 +1,40 @@
+<!--
+  Generated template for the InformacionPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title style = "background-color: rgb(165, 134, 204)"> 
+      <h2 style = "color: rgb(255, 255, 255)">Informacion</h2>
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding style = "background-color: rgb(165, 134, 204)">
+    <img [src]= Casa.Imagen>
+
+    <ion-card style = "background-color: rgb(85, 67, 185)">  
+          <ion-col>
+          <h1 style = "color: rgb(228, 228, 228)" > Colonia: {{Casa.Colonia}}</h1>
+          <h1 style = "color: rgb(228, 228, 228)"> Precio: {{Casa.Precio}}</h1>
+        </ion-col>
+
+          <br> 
+
+          <ion-col>
+              <h1 style = "color: rgb(228, 228, 228)"> Recamaras: {{Casa.Recamaras}}</h1>
+              <h1 style = "color: rgb(228, 228, 228)"> Baños: {{Casa.Banos}}</h1>
+              <h1 style = "color: rgb(228, 228, 228)"> Estacionamientos:  {{Casa.Estacionar}}</h1>
+              <h1 style = "color: rgb(228, 228, 228)"> Antigüedad: {{Casa.Tiempo}}</h1>
+          </ion-col>
+
+      </ion-card>
+    
+      <button style = "background-color: rgb(224, 96, 96)" ion-button block (click)= "ClickFavoritos()">Favoritos</button>
+      
+</ion-content>
